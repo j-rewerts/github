@@ -22,7 +22,7 @@ describe('Gist', function() {
 
    describe('reading', function() {
       before(function() {
-         gist = github.getGist('f1c0f84e53aa6b98ec03');
+         gist = github.getGist('0ac3ef3451f4bdc9efec660ffce3e336');
       });
 
       it('should read a gist', function(done) {
