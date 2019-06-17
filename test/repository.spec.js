@@ -626,8 +626,7 @@ describe('Repository', function() {
             treeSHA = commit.data.tree.sha;
             return remoteRepo.commit(parentSHA, treeSHA, 'is this thing on?');
          }).then((commit) => {
-            expect(commit.data.author).to.have.own('name', 'Mike de Boer');
-            expect(commit.data.author).to.have.own('email', 'mike@c9.io');
+            expect(commit.data.author).to.have.own('name', 'github-tools-test');
             done();
          });
       });
